@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#400D51] text-white font-monserat">
+    <h1 class="text-center text-4xl mt-10 font-bold">Budget App</h1>
+    <!--header-->
+    <header class="flex justify-center gap-20 mt-20 text-lg">
+      <article class="p-4 bg-[rgba(102,19,83,0.8)]">
+        <h2>Total expense</h2>
+        <p class="text-center" id="total-expense">0</p>
+      </article>
+      <article class="p-4 bg-[rgba(102,19,83,0.8)]">
+        <h2>Available Balance</h2>
+        <p class="text-center" id="available-balance">0</p>
+      </article>
+      <article class="p-4 bg-[rgba(102,19,83,0.8)]">
+        <h2>Total Income</h2>
+        <p class="text-center" id="total-income">0</p>
+      </article>
+    </header>
+    <!--end of header-->
+
+    <h2 class="text-center text-3xl mt-6 font-semibold">Income</h2>
+    <main class="flex justify-center gap-4 p-2 mt-10 text-black" >
+      <article>
+        <input class="py-2 px-6 focus:outline-none" type="text" placeholder="Enter description" id="income-desc" />
+      </article>
+      <article>
+        <input class="py-2 px-4 focus:outline-none" type="text" placeholder="Enter amount" id="income-amount" />
+      </article>
+      <article>
+        <select class="text-black py-2 px-4" name="select" id="select">
+          <option value="salary">Salary</option>
+          <option value="salary">Freelance</option>
+          <option value="salary">Extra hrs</option>
+        </select>
+      </article>
+      <article>
+        <button class="py-2 px-8 bg-[#a81887] font-semibold text-white" type="button" id="inc-btn">Add</button>
+      </article>
+    </main>
+    <!--Hard value-->
+
+    <section class="w-[56%] text-center mx-auto" id="display-income">
+      <!-- <article class="my-4 py-2 bg-[#fff] text-black">
+        <div class="flex justify-between px-4">
+          <h3>Salary</h3>
+          <h3>Price</h3>
+        </div>
+      </article> -->
+      
+    </section>
+
+    <h2 class="text-center text-3xl mt-6 font-semibold">Expense</h2>
+    <main class="flex justify-center gap-4 p-2 mt-10 text-black">
+      <article>
+        <input class="py-2 px-6 focus:outline-none" type="text" placeholder="Enter description" id="exp-desc" />
+      </article>
+      <article>
+        <input class="py-2 px-4 focus:outline-none" type="text" placeholder="Enter amount" id="exp-amount" />
+      </article>
+      <article>
+        <select class="text-black py-2 px-4" name="select" id="select">
+          <option value="salary">Rent</option>
+          <option value="salary">Grocery</option>
+          <option value="salary">Shopping</option>
+        </select>
+      </article>
+      <article>
+        <button class="py-2 px-8 bg-[#a81887] font-semibold text-white" type="button" id="exp-btn">Add</button>
+      </article>
+    </main>
+    <!--Hard value-->
+
+    <section class="w-[56%] text-center mx-auto" id="display-expense">
+
+      <!-- <article class="my-4 py-2 bg-[#fff] text-black">
+        <div class="flex justify-between px-4">
+          <h3>Freelance</h3>
+          <h3>Price</h3>
+        </div>
+      </article> -->
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
